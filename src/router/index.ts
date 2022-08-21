@@ -1,3 +1,4 @@
+import Create from "@/views/Create.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ShowText from "../views/ShowText.vue";
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/texts",
       name: "texts",
       component: ShowText
+    }, 
+    {
+      path: "/texts/create",
+      name: "createText",
+      component: Create
     }
   ],
 });

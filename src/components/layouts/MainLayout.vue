@@ -1,5 +1,5 @@
 <template>
-
+<div class="bg-[url('/backgrounds/bluebg.jpg')] bg-fixed bg-cover h-screen w-screen mt-0">
 <!-- This example requires Tailwind CSS v2.0+ -->
 <nav class="bg-gray-800">
   <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -15,7 +15,7 @@
             
             <RouterLink to="/texts" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Texte</RouterLink>
 
-            <RouterLink to="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Keine Ahnung</RouterLink>
+            <RouterLink to="/texts/create" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Erstellen</RouterLink>
 
             <RouterLink to="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Keine Ahnung</RouterLink>
           </div>
@@ -62,8 +62,10 @@
 
 </nav>
 
-<div class="m-10">
+
+  <div class="m-10">
     <RouterView />
+  </div>
 </div>
 
 </template>
@@ -77,3 +79,8 @@ const isProfileOpen = ref(false);
 
 </script>
 
+<style>
+.bg-style {
+  background-image: "url('public/backgrounds/vecteezy_blue-background_wk1120.jpg')";
+}
+</style>

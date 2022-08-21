@@ -1,15 +1,17 @@
 <template>
-    <div class="border border-black rounded-md p-5">
+<div class="">
+    <div class="border rounded-md p-3 bg-slate-300">
         <div class="p-2 flex justify-center">
-            <h5>{{ data?.label }}</h5>
+            <h3 class="font-medium">{{ data?.label }}</h3>
         </div>
         <p>{{ data?.created }}</p>
         <div class="border border-gray-600 rounded-md p-2">
-            <textarea readonly>
+            <div class="whitespace-pre-wrap">
                 {{ data?.content }}
-            </textarea>
+            </div>
         </div>
     </div>
+</div>
 </template>
 
 <script setup lang="ts">
